@@ -8,6 +8,9 @@ namespace lesson12_constructors
         {
             IAnimal myAnimal = new Animal();
 
+            Dog myDog = new Dog();
+            myDog.Breathe();
+
             myAnimal.Name = "David";
             myAnimal.Breathe();
         }
@@ -21,10 +24,17 @@ namespace lesson12_constructors
             {
                 Console.WriteLine("I'm Breathing");
             }
+
+            public void Eat()
+            {
+
+            }
         }
 
         class Dog : IAnimal
         {
+            public int NumberofLegs { get; set; }
+
             public string Name { get; set; }
 
             public void Breathe()
