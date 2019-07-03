@@ -8,17 +8,15 @@ namespace Challenge2_InterfacesAndClasses
     {
         static void Main(string[] args)
         {
-            Dog myDog = new Dog();
-            myDog.Gender = "male";
+            Dog myDog = new Dog("male", "Tim");
             myDog.Breathe();
             myDog.Eat();
-            Console.WriteLine("My gender is " + myDog.Gender);
+            Console.WriteLine("My gender is " + myDog.Gender + " and my name is " + myDog.Name);
 
-            Fish myFish = new Fish();
-            myFish.Gender = "female";
+            Fish myFish = new Fish("female", "Holly");
             myFish.Eat();
             myFish.Breathe();
-            Console.WriteLine("My gender is " + myFish.Gender);
+            Console.WriteLine("My gender is " + myFish.Gender + " and my name is " + myFish.Name);
         }
     }
 }
